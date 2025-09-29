@@ -7,8 +7,10 @@ import pandas as pd
 
 # Importing the dataset
 dataset = pd.read_csv('Data.csv')
-# X = dataset.iloc[:, :-1].values
-# y = dataset.iloc[:, -1].values
+X = dataset.iloc[:, :-1].values
+Y = dataset.iloc[:, -1 ].values
+
+print(Y)
 
 # # Splitting the dataset into the Training set and Test set
 # from sklearn.model_selection import train_test_split
